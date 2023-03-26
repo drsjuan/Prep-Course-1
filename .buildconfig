@@ -1,0 +1,11 @@
+[default]
+name=Default
+runtime=host
+toolchain=default
+config-opts=
+run-opts=
+prefix=/home/daniel/.cache/gnome-builder/install/Prep-Course-1/host
+app-id=
+postbuild=
+prebuild=
+default=true
