@@ -7,7 +7,7 @@ function obtenerMayor(x, y) {
   // Tu código:
   if (x > y){
   return x
-  }return y   apt-get install git
+  }return y
  }
 
 function mayoriaDeEdad(edad) {
@@ -17,7 +17,7 @@ function mayoriaDeEdad(edad) {
   let edadtope=18
   if (edad >= edadtope){
       return "Allowed"
-  }return "Not Allowed"
+  }return "Not allowed"
 }
   
 function conection(status) {
@@ -29,8 +29,9 @@ function conection(status) {
   if (status === 1){
       return "Online"
   }else{
-      if (status === 2
+      if (status === 2){
          return "Away"
+  }
   }return "Offline"
 }  
 
@@ -41,6 +42,17 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+  if(idioma === "aleman"){
+        return "Guten Tag!";
+  }else{
+      if (idioma === "mandarin"){
+          return "Ni Hao!";
+      }else{
+          if (idioma === "ingles"){
+            return "Hello!";  
+          }
+      }
+  }return "Hola!" 
 }
 
 function colors(color) {
@@ -51,6 +63,20 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  switch(color) {
+     case "blue":
+        return "This is blue";
+        break;
+     case "red":
+        return "This is red";
+        break;
+     case "green":  
+        return "This is green";
+         break;
+     case "orange":  
+        return "This is orange";
+         break;         
+  }return "Color not found";
 }
 
 function esDiezOCinco(numero) {
@@ -144,5 +170,5 @@ module.exports = {
   esVerdadero,
   tablaDelSeis,
   tieneTresDigitos,
-  doWhile,
+  doWhile
 };
