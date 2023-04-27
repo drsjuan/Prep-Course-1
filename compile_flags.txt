@@ -1,0 +1,7 @@
+-I/usr/include/c++/10
+-I/usr/include/i386-linux-gnu/c++/10
+-I/usr/include/c++/10/backward
+-I/usr/lib/gcc/i686-linux-gnu/10/include
+-I/usr/local/include
+-I/usr/include/i386-linux-gnu
+-I/usr/include

@@ -1,0 +1,36 @@
+<html>
+	<head>
+	      <title>	
+ 		<h2><p>"Primer Program en Python"</p></h2>
+              </title>
+        </head>
+<body>
+<!-- Formateamos e imprimimos el frame en Python -->
+	<h3><p>"Voy a Entrar con Python"</p></h3>
+
+<!-- Podemos instanciar los archivos de PyScript desde nuestro propio Servidor (Previamente descargados)
+
+<link rel="stylesheet" href="assets/css/pyscript.css" />
+<script defer src="assets/js/pyscript.js"></script> -->
+
+<!-- Instanciamos los archivos de PyScript desde su mismo Servidor -->
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+
+<div id="miframe">
+  <py-script>
+
+	import gi
+
+	gi.require_version("Gtk", "3.0")
+	from gi.repository import Gtk
+
+	win = Gtk.Window()
+	win.connect("destroy", Gtk.main_quit)
+	win.show_all()
+	Gtk.main()
+   </py-script>
+</div>
+</body>
+</html>
